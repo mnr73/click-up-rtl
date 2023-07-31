@@ -7,7 +7,7 @@
 		cu-task-editor .ql-block,
 		.cu-task-row-main__link-text-inner,
 		.cu-panel-board__clickable-name
-		{direction:rtl;unicode-bidi:plaintext}
+		{direction:rtl;unicode-bidi:isolate}
 		</style>`)
 
 	})
