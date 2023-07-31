@@ -1,0 +1,33 @@
+{
+	"name": "ClickUp rtl",
+	"version": "1.0.0",
+	"description": "latest covid data of UK",
+	"manifest_version": 3,
+	"author": "Milad Nazari",
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://*.clickup.com/*"
+			],
+			"js": [
+				"contentScript.js"
+			]
+		}
+	],
+	"icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+	},
+	"action": {
+		"default_popup": "index.html",
+		"default_title": "ClickUp rtl"
+	},
+	"permissions": [
+		"tabs",
+		"activeTab"
+	]
+}
